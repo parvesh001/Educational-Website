@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- FONT AWESOME ICONS LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- GOOGLE FONT (MONTSERRAT) LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Heebo:wght@300&family=Hind+Siliguri&family=Joan&family=Montserrat:wght@400;500;600;700&family=Noto+Serif&family=Overpass:wght@200;400&family=PT+Sans:ital@1&family=Pacifico&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- LINK CSS STYLE SHEET -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/responsive.css" />
+  </head>
+  <body>
+    <!-------NAV-------->
+    <nav class="nav">
+      <!-------NAV CONTAINER-------->
+      <div class="container nav-center">
+        <!-------LOGO-------->
+        <div class="logo">
+          <a href="index.htm"><h4>COMBRIDGE</h4></a>
+        </div>
+        <!-------LIST-CONTAINER-------->
+        <div class="list-container">
+          <!-------ITEM LIST-------->
+          <ul class="item-list">
+            <li class="item"><a href="index.html" class="active">Home</a></li>
+            <li class="item"><a href="about.html" class="active">About</a></li>
+            <li class="item">
+              <a href="courses.html" class="active">Courses</a>
+            </li>
+            <li class="item">
+              <a href="contact.html" class="active">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-------BUTTONS-------->
+        <div class="btns">
+          <!-------BAR BTN-------->
+          <button class="bar-btn btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <!-------CROSS BTN-------->
+          <button class="cross-btn btn">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- NAV END -->
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <div class="container contact-center">
+        <aside class="contact-details">
+          <div class="contact-img">
+            <img src="images/contact.svg" alt="contact image">
+          </div>
+          <h2>contact us</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut numquam aspernatur optio ipsa officia iure adipisci voluptas voluptatibus et quasi.</p>
+          <ul class="contact-info">
+              <li><i class="fa-solid fa-phone"></i>
+              <span>+0999900000</span></li>
+              <li><i class="fa-solid fa-at"></i>
+              <span>vparvesh@gmial.com</span></li>
+              <li><i class="fa-solid fa-location-dot"></i>
+              <span>sector 17, chandigarh</span></li>
+          </ul>
+          <div class="contact-sm-links">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-facebook"></i>
+          </div>
+        </aside>
+        <form action="https://formspree.io/f/mdobrjky"
+        method="POST" class="input-form">
+          <div class="user-name input">
+            <input type="text" name="first-name" id="first-name" placeholder="first name" />
+            <input type="text" name="last-name" id="last-name" placeholder="last name" />
+          </div>
+          <div class="emial-address input">
+          <input type="email" name="emial" id="email" placeholder="email address">
+          </div>
+          <div class="your-message input">
+              <textarea name="text-area" id="text-area" cols="30" rows="10" placeholder="write your text..."></textarea>
+            </label>
+          </div>
+          <div class="input-btn">
+            <input type="submit" class="link-btn" value="send message">
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- END CONTACT SECTION -->
+
+    <!----------  FOOTER SECTION --------------->
+    <footer>
+      <div class="container footer-container">
+        <div>
+          <h5>combridge</h5>
+          <span
+            >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo odio
+            nemo itaque velit natus nam atque ea veritatis a commodi.</span
+          >
+        </div>
+        <div>
+          <h5>links</h5>
+          <ul>
+            <li><a href="home.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="services.html">services</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>primacy</h5>
+          <p>privacy policy</p>
+          <p>terms and conditions</p>
+          <p>refund policy</p>
+        </div>
+        <div>
+          <h5>contact us</h5>
+          <p>+09138333944</p>
+          <p>combridge.000@gmail.com</p>
+          <div class="icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!---------- END FOOTER SECTION --------------->
+
+    <script src="script/main.js"></script>
+  </body>
+</html>

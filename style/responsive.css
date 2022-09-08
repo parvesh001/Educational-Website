@@ -1,0 +1,549 @@
+/*================= max-width 600px ===================*/
+
+@media screen and (max-width: 600px) {
+  /* == global ==*/
+
+  .link-btn {
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  section {
+    padding: 2rem 0;
+  }
+  .container {
+    min-width: var(--container-w-sm);
+  }
+
+  /* ====== for nav bar ======*/
+  .nav-center {
+    position: relative;
+  }
+  /* list */
+  .list-container {
+    position: absolute;
+    top: 4.5rem;
+    right: 1rem;
+    width: 250px;
+    display: none;
+  }
+  .item-list {
+    flex-direction: column;
+    gap: 0;
+  }
+  .item {
+    width: 100%;
+    background: var(--clr-primary);
+    padding: 20px;
+    text-align: center;
+    animation: navAnimation 0.4s linear forwards;
+    transform-origin: top right;
+    opacity: 0;
+  }
+
+  .item:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .item:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  .item:nth-child(4) {
+    animation-delay: 0.5s;
+  }
+
+  @keyframes navAnimation {
+    0% {
+      transform: rotateZ(-90deg);
+    }
+    100% {
+      transform: rotateZ(0);
+      opacity: 1;
+    }
+  }
+
+  .item:hover {
+    background: var(--clr-bg2);
+  }
+  .item a:hover {
+    color: var(--clr-white);
+  }
+
+  /* btns */
+  .btns {
+    display: block;
+  }
+
+  .btn {
+    background-color: transparent;
+    border: none;
+  }
+  .btn i {
+    color: white;
+    font-size: 1.5rem;
+  }
+  .btns .cross-btn {
+    display: none;
+  }
+
+  /* ====== for header ======*/
+
+  #header {
+    top: 6rem;
+    height: 40vh;
+  }
+  #hero {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 12px;
+  }
+
+  #hero .right-side {
+    width: 60%;
+  }
+
+  /* ====== for categories ======*/
+
+  #categories {
+    height: 80vh;
+    margin-top: 8rem;
+    padding: 0 10px;
+  }
+  .categories-center {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .categories-center .left-side a {
+    padding: 4px 5px;
+    font-size: 12px;
+  }
+  .categories-center .right-side {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .category p {
+    color: var(--clr-white);
+    font-size: 12px;
+  }
+
+  /* == for courses section ==*/
+  #courses {
+    margin-top: 12rem;
+  }
+  #courses h2 {
+    line-height: 0;
+    white-space: nowrap;
+    margin-bottom: 25px;
+  }
+  .courses-container {
+    display: initial;
+  }
+  .courses-container .course:not(:last-child) {
+    margin-bottom: 35px;
+  }
+
+  /* == for FAQs section ==*/
+
+  #faqs {
+    margin-top: 2rem;
+  }
+  .articles-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .article {
+    padding: var(--pd-md);
+  }
+  .ques-ans h4 {
+    font-size: 16px;
+  }
+
+  /* == for testimonial section ==*/
+  #testimonial {
+    width: 100vw;
+  }
+  #testimonial h2 {
+    line-height: 1.5;
+  }
+  .avtar-info p {
+    padding: var(--pd-md);
+    margin: 1.5rem auto 1.5rem auto;
+  }
+  .avtar-info p::after {
+    left: 41%;
+  }
+  .auto-nav {
+    width: 100vw;
+  }
+
+  /* == for footer section ==*/
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* ================ ABOUT PAGE RESPONSIVENESS 600px ================ */
+  /* == about page header */
+
+  #about-header {
+    height: 80vh;
+  }
+  #about-hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: 36% 53%;
+  }
+  .about-img {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .about-right-side h2 {
+    line-height: 1;
+    letter-spacing: 0;
+    font-size: 1rem;
+  }
+  .about-right-side p {
+    font-size: 12px;
+  }
+  .add-info {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+  .add-info .info {
+    padding: 8px;
+  }
+  .info .icon {
+    font-size: 10px;
+  }
+
+  /* == about page our team */
+  #our-team-members {
+    margin-top: 8rem;
+  }
+  #our-team-members > .title {
+    font-size: 18px;
+  }
+  .team--members-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .t-member {
+    padding: 0.5rem;
+  }
+  .t-member-info h4 {
+    font-size: 14px;
+  }
+  .social-media-links a {
+    padding: 0.5rem;
+  }
+  .social-media-links a i {
+    font-size: 14px;
+  }
+
+
+  /* ================ CONTACT PAGE RESPONSIVENESS 600px ================ */
+  #contact {
+    margin-top: 6rem;
+    margin-bottom: -6rem;
+    height: max-content;
+}
+.contact-center {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 0;
+  height: 100%;
+  background-color: transparent;
+  padding:0;
+}
+.contact-details {
+  padding: 1rem;
+  border-radius: 0;
+  transform: translateY(0);
+  box-shadow: none;
+}
+.contact-details h2 {
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+.contact-details p {
+  margin-bottom: 1rem;
+  font-size: 0.7rem;
+}
+.contact-info {
+  margin-bottom: 2rem;
+  font-size: .8rem;
+}
+.contact-sm-links i {
+  padding: 4px;
+  font-size: 14px;
+}
+
+/* ==input form */
+.input-form{
+  margin-top: 4rem;
+}
+.input-form div:not(:last-child) {
+  margin-bottom: 10px;
+}
+.user-name {
+  grid-template-columns: 1fr;
+  column-gap: 0;
+  row-gap: 10px;
+}
+.input-form input:not(.link-btn), .input-form textarea {
+  padding: 0.5rem;
+  border: 1px solid var(--clr-bg1);
+}
+}
+
+/*================= max-width 962px ===================*/
+
+@media screen and (min-width: 601px) and (max-width: 962px) {
+  /* ===== global =====*/
+  section {
+    padding: 0;
+  }
+  .container {
+    width: var(--container-w-md);
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .link-btn {
+    padding: 1px 10px;
+  }
+
+  /* ====== for nav bar ======*/
+  .nav-center {
+    position: relative;
+  }
+  /* list */
+  .list-container {
+    position: absolute;
+    top: 4.5rem;
+    right: 1rem;
+    width: 250px;
+    display: none;
+  }
+  .item-list {
+    flex-direction: column;
+    gap: 0;
+  }
+  .item {
+    width: 100%;
+    background: var(--clr-primary);
+    padding: 20px;
+    text-align: center;
+    animation: navAnimation 0.4s linear forwards;
+    transform-origin: top right;
+    opacity: 0;
+  }
+
+  .item:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .item:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  .item:nth-child(4) {
+    animation-delay: 0.5s;
+  }
+
+  @keyframes navAnimation {
+    0% {
+      transform: rotateZ(-90deg);
+    }
+    100% {
+      transform: rotateZ(0);
+      opacity: 1;
+    }
+  }
+
+  .item:hover {
+    background: var(--clr-bg2);
+  }
+  .item a:hover {
+    color: var(--clr-white);
+  }
+
+  /* btns */
+  .btns {
+    display: block;
+  }
+
+  .btn {
+    background-color: transparent;
+    border: none;
+  }
+  .btn i {
+    color: white;
+    font-size: 1.5rem;
+  }
+  .btns .cross-btn {
+    display: none;
+  }
+
+  /* ====== for header ======*/
+
+  #header {
+    height: 50vh;
+  }
+  #hero {
+    grid-template-columns: 45% 45%;
+    gap: 48px;
+  }
+
+  /* == for category section ==*/
+  #categories {
+    height: 45vh;
+    padding: 4rem 0 0 0;
+  }
+
+  .categories-center .left-side p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .categories-center .right-side {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .categories-center .left-side a {
+    padding: 4px;
+    font-size: 16px;
+  }
+
+  /*== for courses section==*/
+  #courses {
+    margin-bottom: 6rem;
+  }
+
+  /*==for FAQs section==*/
+  #faqs {
+    padding-bottom: 3rem;
+  }
+
+  .courses-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* == for testimonial section ==*/
+  #testimonial {
+    width: 100vw;
+    height: 40rem;
+  }
+  .auto-nav {
+    width: 100vw;
+  }
+
+  /* ================ ABOUT PAGE RESPONSIVENESS 962px ================ */
+  /* == about page header */
+  #about-hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+    gap: 0;
+  }
+  .about-img {
+    width: 85%;
+    margin: 0 auto;
+  }
+  #our-team-members {
+    padding: 2rem 0;
+  }
+  .team--members-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  footer {
+    margin-top: 5rem;
+  }
+
+  /* ================ CONTACT PAGE RESPONSIVENESS 962px ================ */
+  #contact {
+    height: fit-content;
+}
+.contact-center {
+  grid-template-columns: 1fr;
+  grid-template-rows: 61% 35%;
+  column-gap: 0;
+  height: 100%;
+}
+.contact-details {
+  padding: 1rem;
+  transform: translateY(0%);
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.contact-img {
+  width: 60%;
+  margin: 0 auto;
+}
+}
+
+/*=================from 746px to 800px ===================*/
+@media screen and (min-width: 746px) and (max-width: 800px) {
+  #courses {
+    margin-top: 14rem;
+  }
+}
+
+/*================= max-width 1024px ===================*/
+@media screen and (min-width: 963px) and (max-width: 1024px) {
+  /* == global ==*/
+  section,
+  footer {
+    padding: 3rem 0;
+  }
+
+  /* == for category section ==*/
+  #categories {
+    height: 52vh;
+  }
+  .categories-center {
+    grid-template-columns: 40% 54%;
+    gap: 40px;
+  }
+  .categories-center .left-side h2 {
+    line-height: 51px;
+  }
+  .categories-center .left-side p {
+    margin-bottom: 1rem;
+  }
+  .categories-center .left-side a {
+    padding: 2px 7px;
+  }
+  .category {
+    background: var(--clr-bg2);
+    border-radius: 1.5rem;
+    padding: 15px;
+    height: 149px;
+    width: 150px;
+  }
+  .category .icon {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .category h5 {
+    line-height: 20px;
+    white-space: nowrap;
+    font-size: 14px;
+  }
+  .category p {
+    font-size: 11.3px;
+  }
+
+  /* ==FAQs Section == */
+}
