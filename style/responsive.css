@@ -7,16 +7,16 @@
 @media only screen and (min-width:320px) and (max-width:480px){
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   h3 {
-    font-size: 75rem;
+    font-size: 1.2rem;
   }
   h4 {
-    font-size: .5rem;
+    font-size: 1rem;
   }
 
   .container {
@@ -28,5 +28,157 @@
     padding: 2rem 0;
   }
 
-  
+  /*--------- NAVIGATION -----------*/
+  .btns {
+    display: block;
+  }
+
+  .btn {
+    background-color: transparent;
+    border: none;
+  }
+  .btn i {
+    color: white;
+    font-size: 1.5rem;
+  }
+  .btns .cross-btn {
+    display: none;
+  }
+
+  .nav-center {
+    position: relative;
+  }
+  /* list */
+  .list-container {
+    position: absolute;
+    top: 4.5rem;
+    right: 1rem;
+    width: 250px;
+    display: none;
+  }
+   .item-list {
+    flex-direction: column;
+    gap: 0;
+  }
+  .item {
+    width: 100%;
+    background: var(--clr-primary);
+    padding: 20px;
+    text-align: center;
+    animation: navAnimation 0.4s linear forwards;
+    transform-origin: top right;
+    opacity: 0;
+  }
+
+  .item:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .item:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  .item:nth-child(4) {
+    animation-delay: 0.5s;
+  }
+
+  @keyframes navAnimation {
+    0% {
+      transform: rotateZ(-90deg);
+    }
+    100% {
+      transform: rotateZ(0);
+      opacity: 1;
+    }
+  }
+
+  .item:hover {
+    background: var(--clr-bg2);
+  }
+  .item a:hover {
+    color: var(--clr-white);
+  } 
+
+  /*--------- HERO -----------*/
+  #header {
+    position: relative;
+    top: 5rem;
+    height: fit-content;
+    margin-bottom: 0rem;
+  }
+  #hero {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    height: fit-content;
+  }
+  #hero .left-side {
+    order: 2;
+  }
+
+  /*--------- CATEGORY -----------*/
+  #categories {
+    height: fit-content;
+    margin-top: 8rem;
+    margin-bottom: 0;
+  }
+  .categories-center {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .categories-center .left-side{
+    order: 2;
+  }
+  .categories-center .right-side {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /*--------- COURSES -----------*/
+  .courses-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  /*--------- FAQs -----------*/
+  #faqs {
+    margin-top: 3rem;
+  }
+  .articles-container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .article {
+    padding: 1.3rem;
+  }
+
+  /*--------- TESTIMONIALA -----------*/
+  #testimonial {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .testimonial-container {
+    margin-top: 0rem;
+  }
+  .avtar-info small {
+    margin-bottom: 2.5rem;
+  }
+  .avtar-info p::after {
+    top: -11%;
+    left: 43%;
+  }
+  .avtar-info p {
+    padding: .4rem;
+    max-width: 93%;
+  }
+  .manual-nav {
+    width: 100vw;
+  }
+
+  /*--------- FOOTER -----------*/
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    color: var(--clr-white);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
